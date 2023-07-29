@@ -1,0 +1,15 @@
+app:
+  name: hamburg-poi-backend-app
+  namespace: hamburg
+  cluster: .apps.redhatdevhub.l07n.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/devhub-test/hamburg-backend
+  org: devhub-test
+  name: hamburg-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: hamburg/poi-backend-app
+  tag: latest
